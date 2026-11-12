@@ -10,7 +10,7 @@ const AboutDoctor = () => {
                 <div className="about-container">
 
                     <div className="about-breadcrumb">
-                        <a href="/">Home</a>
+                        <a href="/demo-doc-web">Home</a>
                         <span>›</span>
                         <span>About</span>
                     </div>

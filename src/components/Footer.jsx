@@ -18,7 +18,7 @@ const Footer = () => {
 
                 <div className="footer-brand">
 
-                    <a href="/" className="footer-logo">
+                    <a href="/demo-doc-web" className="footer-logo">
                         <img
                             src={`${import.meta.env.BASE_URL}logo.webp`}
                             alt="Dr. Sushil Kumar Patle"

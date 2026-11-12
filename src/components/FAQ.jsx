@@ -80,7 +80,7 @@ const FAQ = () => {
                 <div className="faq-container">
 
                     <div className="faq-breadcrumb">
-                        <a href="/">Home</a>
+                        <a href="/demo-doc-web">Home</a>
                         <span>›</span>
                         <span className="current">FAQ</span>
                     </div>

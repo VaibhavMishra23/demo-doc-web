@@ -12,7 +12,7 @@ const ContactPage = () => {
                 <div className="contact-container">
 
                     <div className="contact-breadcrumb">
-                        <a href="/">Home</a>
+                        <a href="/demo-doc-web">Home</a>
                         <span>/</span>
                         <span>Contact</span>
                     </div>
