@@ -1,0 +1,125 @@
+/* ================================
+   STATS SECTION
+================================ */
+
+.stats-section {
+    margin-top: 40px;
+    width: 100%;
+    position: relative;
+
+    padding: 65px 0 70px;
+
+    background: #ffffff;
+
+    border-top: 3px solid transparent;
+
+    border-image: linear-gradient(
+        90deg,
+        #079d90,
+        #50e0c5
+    ) 1;
+}
+
+/* Container */
+
+.stats-container {
+    max-width: 1450px;
+    width: 90%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    align-items: center;
+}
+
+/* Individual Stats */
+
+.stats-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+/* Numbers */
+
+.stats-item h2 {
+    margin: 0 0 10px;
+
+    color: #0d9c8e;
+
+    font-size: 33px;
+    font-weight: 750;
+    line-height: 1.1;
+
+    letter-spacing: -1px;
+}
+
+/* Labels */
+
+.stats-item p {
+    margin: 0;
+
+    color: #748681;
+
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 768px) {
+
+    .stats-section {
+        padding: 45px 0;
+    }
+
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+    }
+
+    .stats-item h2 {
+        font-size: 38px;
+    }
+
+    .stats-item p {
+        font-size: 16px;
+    }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 480px) {
+
+    .stats-section {
+        padding: 38px 0;
+    }
+
+    .stats-container {
+        width: 94%;
+        row-gap: 32px;
+        column-gap: 10px;
+    }
+
+    .stats-item h2 {
+        font-size: 32px;
+        margin-bottom: 7px;
+    }
+
+    .stats-item p {
+        font-size: 13px;
+    }
+
+}

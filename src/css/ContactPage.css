@@ -1,0 +1,434 @@
+/* =========================================
+   CONTACT PAGE
+========================================= */
+
+.contact-page {
+    width: 100%;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #164d4d;
+}
+
+
+/* =========================================
+   COMMON CONTAINER
+========================================= */
+
+.contact-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* =========================================
+   HEADING SECTION
+========================================= */
+
+.contact-heading-section {
+    width: 100%;
+    background: #faf9f6;
+    padding: 68px 0 38px;
+}
+
+.contact-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #829597;
+}
+
+.contact-breadcrumb a {
+    color: #829597;
+    text-decoration: none;
+}
+
+.contact-breadcrumb a:hover {
+    color: #079b91;
+}
+
+.contact-breadcrumb span:last-child {
+    color: #079b91;
+    font-weight: 600;
+}
+
+.contact-heading-section h1 {
+    margin: 0 0 12px;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #07948c;
+}
+
+.contact-heading-section p {
+    max-width: 510px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #77898a;
+}
+
+.contact-heading-line {
+    width: 293px;
+    height: 2px;
+    margin-top: 17px;
+    background: linear-gradient(
+        to right,
+        #079b91,
+        #b8e9e3
+    );
+}
+
+
+/* =========================================
+   MAP SECTION
+========================================= */
+
+.contact-map-section {
+    position: relative;
+    width: 100%;
+    min-height: 610px;
+    overflow: hidden;
+    background: #e9eeee;
+}
+
+
+/* GOOGLE MAP */
+
+.contact-map {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: none;
+}
+
+
+/* =========================================
+   MAP WHITE GRADIENT OVERLAY
+========================================= */
+
+.contact-map-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            to right,
+            rgba(250, 249, 246, 0.97) 0%,
+            rgba(250, 249, 246, 0.90) 17%,
+            rgba(250, 249, 246, 0.65) 30%,
+            rgba(250, 249, 246, 0.15) 48%,
+            rgba(250, 249, 246, 0) 65%
+        );
+}
+
+
+/* =========================================
+   CONTENT CONTAINER
+========================================= */
+
+.contact-content-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 65px 20px;
+}
+
+
+/* =========================================
+   INFORMATION PANEL
+========================================= */
+
+.contact-information {
+    width: 290px;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.contact-intro {
+    margin-bottom: 20px;
+}
+
+.contact-visit-badge {
+    display: inline-block;
+    padding: 6px 13px;
+    margin-bottom: 12px;
+    border-radius: 30px;
+    background: #d9f4ef;
+    color: #078d85;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.contact-intro h2 {
+    margin: 0 0 10px;
+    max-width: 280px;
+    font-size: 27px;
+    line-height: 1.15;
+    font-weight: 700;
+    color: #075f5c;
+}
+
+.contact-intro p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.65;
+    color: #6e8585;
+}
+
+
+/* =========================================
+   INFORMATION CARDS
+========================================= */
+
+.contact-info-card {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    width: 100%;
+    min-height: 100px;
+
+    margin-bottom: 9px;
+    padding: 17px 14px;
+
+    border: 1px solid rgba(205, 224, 221, 0.9);
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    box-shadow: 0 5px 18px rgba(24, 77, 73, 0.05);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 9px 22px rgba(24, 77, 73, 0.10);
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.contact-icon {
+    flex-shrink: 0;
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: #eaf7f5;
+    color: #079b91;
+}
+
+.contact-icon span {
+    font-size: 19px;
+    line-height: 1;
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.contact-card-content {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    min-width: 0;
+}
+
+.contact-card-content h3 {
+    margin: 1px 0 6px;
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #126b68;
+}
+
+.contact-card-content p {
+    margin: 0 0 4px;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #718484;
+}
+
+.contact-card-content a {
+    display: block;
+    width: fit-content;
+    margin-top: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #079b91;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-card-content a:hover {
+    color: #075f5c;
+}
+
+.contact-closed {
+    display: block;
+    margin-top: 7px;
+    font-size: 10px;
+    color: #e36d5f;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   CARD NUMBER
+========================================= */
+
+.contact-card-number {
+    position: absolute;
+    top: 9px;
+    right: 12px;
+
+    font-size: 25px;
+    font-weight: 700;
+
+    color: rgba(7, 155, 145, 0.055);
+}
+
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .contact-heading-section {
+        padding: 55px 0 32px;
+    }
+
+    .contact-heading-section h1 {
+        font-size: 34px;
+    }
+
+    .contact-map-section {
+        min-height: 850px;
+    }
+
+    .contact-map-overlay {
+        background: linear-gradient(
+            to bottom,
+            rgba(250, 249, 246, 0.88) 0%,
+            rgba(250, 249, 246, 0.65) 35%,
+            rgba(250, 249, 246, 0.20) 100%
+        );
+    }
+
+    .contact-content-container {
+        padding-top: 45px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .contact-container {
+        padding: 0 17px;
+    }
+
+    .contact-heading-section {
+        padding: 40px 0 28px;
+    }
+
+    .contact-breadcrumb {
+        font-size: 11px;
+        margin-bottom: 16px;
+    }
+
+    .contact-heading-section h1 {
+        font-size: 29px;
+    }
+
+    .contact-heading-section p {
+        font-size: 13px;
+    }
+
+    .contact-heading-line {
+        width: 230px;
+    }
+
+    .contact-map-section {
+        min-height: 900px;
+    }
+
+    .contact-map-overlay {
+        background: linear-gradient(
+            to bottom,
+            rgba(250, 249, 246, 0.96) 0%,
+            rgba(250, 249, 246, 0.90) 60%,
+            rgba(250, 249, 246, 0.55) 100%
+        );
+    }
+
+    .contact-content-container {
+        padding: 35px 17px;
+    }
+
+    .contact-information {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .contact-intro h2 {
+        font-size: 25px;
+    }
+
+    .contact-intro p {
+        font-size: 13px;
+    }
+
+    .contact-info-card {
+        min-height: 95px;
+        padding: 15px 12px;
+        gap: 10px;
+    }
+
+    .contact-card-content h3 {
+        font-size: 13px;
+    }
+
+    .contact-card-content p,
+    .contact-card-content a {
+        font-size: 11px;
+    }
+
+}

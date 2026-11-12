@@ -1,0 +1,307 @@
+
+/* ================================
+   ABOUT DOCTOR SECTION
+================================ */
+
+.about-doctor {
+    width: 100%;
+    padding: 65px 20px 75px;
+    background: #fff;
+    font-family: inherit;
+    overflow: hidden;
+}
+
+/* HEADING */
+
+.about-heading {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-eyebrow {
+    display: block;
+    color: #00a99d;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    margin-bottom: 12px;
+}
+
+.about-heading h2 {
+    color: #12645e;
+    font-size: 43px;
+    line-height: 1.05;
+    font-weight: 700;
+    margin: 0;
+}
+
+.about-subtitle {
+    max-width: 530px;
+    margin: 15px auto 0;
+    color: #788783;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* DESCRIPTION */
+
+.about-description {
+    max-width: 580px;
+    margin: 55px auto 38px;
+    color: #526764;
+    font-size: 18px;
+    line-height: 1.68;
+    text-align: center;
+}
+
+/* CARDS CONTAINER */
+
+.about-cards {
+    max-width: 1025px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+/* INDIVIDUAL CARD */
+
+.about-card {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    min-height: 191px;
+    padding: 24px 23px;
+
+    border: 1px solid #dce7e4;
+    border-radius: 17px;
+    background: #fff;
+
+    cursor: pointer;
+
+    transition:
+        background 0.7s ease,
+        border-color 0.7s ease,
+        transform 0.7s ease,
+        box-shadow 0.7s ease;
+}
+
+/* DIAGONAL SHINE EFFECT */
+
+.about-card::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    top: -100%;
+    left: -75%;
+
+    width: 55%;
+    height: 300%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.22),
+        transparent
+    );
+
+    transform: rotate(22deg) translateX(0);
+    transition: transform 2s ease;
+    pointer-events: none;
+}
+
+.about-card:hover::before {
+    transform: rotate(22deg) translateX(380%);
+}
+
+/* CARD NUMBER */
+
+.card-number {
+    position: absolute;
+    top: -9px;
+    right: 13px;
+
+    color: #f4f9f8;
+    font-size: 92px;
+    line-height: 1;
+    font-weight: 700;
+
+    pointer-events: none;
+    transition: color 0.4s ease;
+}
+
+/* ICON */
+
+.card-icon {
+    position: relative;
+    z-index: 1;
+
+    width: 41px;
+    height: 41px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #dce9e6;
+    border-radius: 12px;
+
+    color: #00a99d;
+    background: #f0f6f5;
+
+    transition: all 0.4s ease;
+}
+
+/* CARD TEXT */
+
+.about-card h3 {
+    position: relative;
+    z-index: 1;
+
+    color: #12645e;
+    font-size: 16px;
+    font-weight: 700;
+
+    margin: 14px 0 7px;
+    transition: color 0.4s ease;
+}
+
+.about-card p {
+    position: relative;
+    z-index: 1;
+
+    color: #7b8c88;
+    font-size: 13px;
+    line-height: 1.65;
+
+    margin: 0;
+    transition: color 0.4s ease;
+}
+
+/* LEARN MORE */
+
+.card-learn {
+    position: relative;
+    z-index: 1;
+
+    display: inline-block;
+    margin-top: 12px;
+
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* HOVER EFFECT */
+
+.about-card:hover {
+    background: linear-gradient(
+        115deg,
+        #12665f 0%,
+        #169b8e 100%
+    );
+
+    border-color: transparent;
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 30px rgba(16, 105, 96, 0.15);
+}
+
+.about-card:hover .card-number {
+    color: rgba(255, 255, 255, 0.07);
+}
+
+.about-card:hover .card-icon {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.13);
+    border-color: rgba(255, 255, 255, 0.18);
+}
+
+.about-card:hover h3,
+.about-card:hover p {
+    color: #fff;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .about-doctor {
+        padding: 50px 18px 55px;
+    }
+
+    .about-heading h2 {
+        font-size: 31px;
+        line-height: 1.15;
+    }
+
+    .about-eyebrow {
+        font-size: 11px;
+    }
+
+    .about-subtitle {
+        font-size: 14px;
+        margin-top: 12px;
+    }
+
+    .about-description {
+        font-size: 14px;
+        line-height: 1.7;
+        margin: 35px auto 28px;
+    }
+
+    .about-cards {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .about-card {
+        min-height: 165px;
+        padding: 21px 19px;
+        border-radius: 15px;
+    }
+
+    .card-number {
+        font-size: 76px;
+    }
+
+    .about-card h3 {
+        font-size: 15px;
+    }
+
+    .about-card p {
+        font-size: 13px;
+    }
+}
+
+/* TABLET */
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .about-heading h2 {
+        font-size: 35px;
+    }
+
+    .about-cards {
+        gap: 12px;
+    }
+
+    .about-card {
+        padding: 21px 18px;
+    }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+    .about-card,
+    .about-card::before,
+    .about-card * {
+        transition: none !important;
+    }
+}

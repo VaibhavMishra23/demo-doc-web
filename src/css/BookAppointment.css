@@ -1,0 +1,173 @@
+/* =========================================
+   VM APPOINTMENT HERO SECTION
+   UNIQUE CLASS PREFIX: vm-appt-hero-
+========================================= */
+
+.vm-appt-hero-wrapper {
+    width: 100%;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   MAIN SECTION
+========================================= */
+
+.vm-appt-hero-section {
+    width: 100%;
+    min-height: 300px;
+    padding: 50px 0 60px;
+
+    background-color: #faf9f6;
+
+    background-image: radial-gradient(
+        rgba(10, 125, 115, 0.055) 0.7px,
+        transparent 0.7px
+    );
+
+    background-size: 24px 24px;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.vm-appt-hero-container {
+    width: 80%;
+    max-width: 1534px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   BREADCRUMB
+========================================= */
+
+.vm-appt-hero-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 29px;
+
+    font-size: 15px;
+}
+
+.vm-appt-hero-breadcrumb a {
+    color: #71858a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.vm-appt-hero-breadcrumb a:hover {
+    color: #079b91;
+}
+
+.vm-appt-hero-separator {
+    color: #b5c2c1;
+}
+
+.vm-appt-hero-current {
+    color: #079b91;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   MAIN HEADING
+========================================= */
+
+.vm-appt-hero-title {
+    margin: 0 0 14px;
+
+    font-size: 48px;
+    line-height: 1.15;
+
+    font-weight: 750;
+    letter-spacing: -1.8px;
+
+    color: #155c58;
+}
+
+.vm-appt-hero-title span {
+    color: #079b91;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.vm-appt-hero-description {
+    max-width: 850px;
+
+    margin: 0;
+
+    font-size: 17px;
+    line-height: 1.75;
+
+    font-weight: 400;
+
+    color: #71858a;
+}
+
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .vm-appt-hero-section {
+        min-height: auto;
+        padding: 50px 0 55px;
+    }
+
+    .vm-appt-hero-container {
+        width: 88%;
+    }
+
+    .vm-appt-hero-title {
+        font-size: 45px;
+    }
+
+    .vm-appt-hero-description {
+        font-size: 17px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .vm-appt-hero-section {
+        padding: 45px 0 45px;
+    }
+
+    .vm-appt-hero-container {
+        width: 90%;
+    }
+
+    .vm-appt-hero-breadcrumb {
+        font-size: 13px;
+        margin-bottom: 23px;
+    }
+
+    .vm-appt-hero-title {
+        font-size: 36px;
+        line-height: 1.2;
+        letter-spacing: -0.8px;
+    }
+
+    .vm-appt-hero-description {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+}

@@ -1,0 +1,192 @@
+.demo-notice-wrapper {
+    width: 100%;
+    min-height: 75vh;
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f8f6;
+    box-sizing: border-box;
+}
+
+.demo-notice-card {
+    width: 100%;
+    max-width: 850px;
+    padding: 65px 70px;
+    background: #ffffff;
+    border: 1px solid #e6eee9;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 15px 50px rgba(25, 75, 50, 0.06);
+    box-sizing: border-box;
+}
+
+.demo-notice-badge {
+    display: inline-block;
+    padding: 9px 17px;
+    background: #eaf5ee;
+    color: #347b51;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+}
+
+.demo-notice-icon {
+    width: 58px;
+    height: 58px;
+    margin: 30px auto 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #edf6f0;
+    color: #398357;
+    border-radius: 50%;
+    font-size: 27px;
+}
+
+.demo-notice-card h1 {
+    margin: 0;
+    color: #183c2a;
+    font-size: 36px;
+    line-height: 1.4;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+}
+
+.demo-notice-card h1 span {
+    color: #439267;
+}
+
+.demo-notice-line {
+    width: 55px;
+    height: 3px;
+    margin: 27px auto;
+    background: #70a987;
+    border-radius: 5px;
+}
+
+.demo-notice-description {
+    max-width: 650px;
+    margin: 0 auto 17px;
+    color: #68766e;
+    font-size: 14px;
+    line-height: 1.9;
+    font-weight: 400;
+}
+
+.demo-notice-quote {
+    position: relative;
+    max-width: 650px;
+    margin: 35px auto 0;
+    padding: 25px 30px;
+    background: #f5f9f6;
+    border-left: 3px solid #70a987;
+    color: #345c43;
+    font-size: 15px;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+.demo-notice-quote span {
+    color: #70a987;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 0 5px;
+}
+
+.demo-notice-footer {
+    margin-top: 40px;
+    padding-top: 22px;
+    border-top: 1px solid #edf0ed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.demo-notice-footer div {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.demo-notice-dot {
+    width: 7px;
+    height: 7px;
+    background: #5aab78;
+    border-radius: 50%;
+}
+
+.demo-notice-footer p {
+    margin: 0;
+    color: #748078;
+    font-size: 11px;
+}
+
+.demo-notice-year {
+    color: #87948b;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .demo-notice-wrapper {
+        min-height: auto;
+        padding: 40px 16px;
+    }
+
+    .demo-notice-card {
+        padding: 45px 25px;
+    }
+
+    .demo-notice-card h1 {
+        font-size: 27px;
+    }
+
+    .demo-notice-description {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .demo-notice-quote {
+        padding: 20px;
+        font-size: 13px;
+    }
+
+    .demo-notice-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .demo-notice-card {
+        padding: 38px 18px;
+    }
+
+    .demo-notice-badge {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .demo-notice-card h1 {
+        font-size: 24px;
+    }
+
+    .demo-notice-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .demo-notice-footer p {
+        font-size: 10px;
+    }
+
+}

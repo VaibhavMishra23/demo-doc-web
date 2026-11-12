@@ -1,0 +1,604 @@
+
+/* ================================
+   NAVBAR
+================================ */
+
+.navbar {
+  width: 100%;
+  height: 68px;
+  background: #fafaf8;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(0, 100, 90, 0.06);
+
+  transition:
+    width 0.3s ease,
+    border-radius 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* Scrolled Navbar */
+
+.navbar.scrolled {
+  width: calc(100% - 150px);
+  max-width: 1640px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(16px);
+
+  border-radius: 50px;
+  background: rgba(250, 250, 248, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 10px 35px rgba(0, 50, 45, 0.09);
+  backdrop-filter: blur(12px);
+}
+
+.navbar-container {
+  max-width: 1540px;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Logo */
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.navbar-brand img {
+  width: 194px;
+  height: auto;
+  max-height: 44px;
+  object-fit: contain;
+}
+
+/* Desktop Navigation */
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  height: 100%;
+}
+
+.nav-link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: none;
+  background: transparent;
+  color: #959595;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.25s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #079d90;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 17px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #079d90;
+}
+
+.dropdown-trigger {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+/* Dropdown Arrow */
+
+.dropdown-arrow {
+  width: 7px;
+  height: 7px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg);
+  position: relative;
+  top: -2px;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+/* Arrow Animation */
+
+.nav-dropdown:hover .dropdown-arrow,
+.nav-dropdown:focus-within .dropdown-arrow {
+  transform: rotate(225deg);
+}
+
+/* ================================
+   SERVICES MEGA MENU
+================================ */
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% - 5px);
+  left: 50%;
+  width: 700px;
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #dce9e6;
+  border-radius: 21px;
+  box-shadow: 0 18px 45px rgba(0, 65, 58, 0.12);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translate(-50%, 12px);
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    visibility 0.25s ease;
+
+  z-index: 1001;
+}
+
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown:focus-within .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translate(-50%, 0);
+}
+
+/* Two Column Grid */
+
+.mega-menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 15px;
+}
+
+/* Individual Service */
+
+.mega-menu-item {
+  min-width: 0;
+  min-height: 65px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.mega-menu-item img {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 11px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.mega-menu-item:hover img {
+  transform: scale(1.05);
+}
+
+.mega-menu-content {
+  min-width: 0;
+}
+
+.mega-menu-content span {
+  display: block;
+  margin-bottom: 3px;
+  color: #69d8c9;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.mega-menu-content h4 {
+  color: #075f5a;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.2s ease;
+}
+
+.mega-menu-item:hover h4 {
+  color: #0d9b8d;
+}
+
+/* View All Services */
+
+.mega-menu-cta {
+  min-height: 85px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  background: #0d978c;
+  color: #ffffff;
+  border-radius: 16px;
+
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.mega-menu-cta:hover {
+  background: #087b73;
+  transform: translateY(-2px);
+}
+
+.mega-menu-cta span {
+  font-size: 24px;
+}
+
+/* Desktop Smaller Screens */
+
+@media (min-width: 901px) and (max-width: 1150px) {
+
+  .dropdown-menu {
+    width: 630px;
+    padding: 20px;
+  }
+
+  .mega-menu-grid {
+    column-gap: 14px;
+    row-gap: 16px;
+  }
+
+  .mega-menu-item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .mega-menu-content h4 {
+    font-size: 13px;
+  }
+}
+
+/* ================================
+   NAVBAR ACTIONS
+================================ */
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.navbar-phone {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #076d68;
+  font-size: 13px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar-phone svg {
+  width: 19px;
+  height: 19px;
+}
+
+.appointment-btn {
+  min-height: 49px;
+  padding: 0 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #0d978c;
+  color: #ffffff;
+  border-radius: 13px;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: 0 4px 10px rgba(0, 120, 110, 0.12);
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.appointment-btn:hover {
+  background: #087b73;
+  transform: translateY(-2px);
+}
+
+/* Mobile Elements */
+
+.mobile-menu-btn,
+.mobile-nav {
+  display: none;
+}
+
+/* ================================
+   TABLET RESPONSIVE
+================================ */
+
+@media (max-width: 1150px) {
+
+  .navbar-container {
+    width: 94%;
+    gap: 18px;
+  }
+
+  .navbar-brand img {
+    width: 210px;
+  }
+
+  .desktop-nav {
+    gap: 28px;
+  }
+
+  .navbar-actions {
+    gap: 13px;
+  }
+
+  .navbar-phone {
+    font-size: 13px;
+  }
+
+  .appointment-btn {
+    padding: 0 19px;
+    font-size: 12px;
+  }
+}
+
+/* ================================
+   MOBILE NAVBAR
+================================ */
+
+@media (max-width: 968px) {
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    left: auto;
+    right: auto;
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+    border-radius: 0;
+    background: #fafaf8;
+    border: none;
+    box-shadow: none;
+  }
+
+  /* Mobile Scrolled Navbar */
+
+  .navbar.scrolled {
+    width: calc(100% - 30px);
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(12px);
+
+    border-radius: 50px;
+    background: rgba(250, 250, 248, 0.96);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 10px 35px rgba(0, 50, 45, 0.09);
+    backdrop-filter: blur(12px);
+  }
+
+  .navbar-container {
+    width: 100%;
+    padding: 0 21px;
+    gap: 10px;
+  }
+
+  .navbar-brand img {
+    width: 185px;
+    max-height: 55px;
+  }
+
+  .desktop-nav,
+  .navbar-actions {
+    display: none;
+  }
+
+  /* Hamburger Button */
+
+  .mobile-menu-btn {
+    width: 35px;
+    height: 35px;
+    padding: 6px 3px;
+    border: none;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  .mobile-menu-btn span {
+    display: block;
+    width: 25px;
+    height: 2.5px;
+    border-radius: 5px;
+    background: #08766f;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .mobile-menu-btn.is-open span:first-child {
+    transform: translateY(7.5px) rotate(45deg);
+  }
+
+  .mobile-menu-btn.is-open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-menu-btn.is-open span:last-child {
+    transform: translateY(-7.5px) rotate(-45deg);
+  }
+
+  /* Mobile Dropdown Menu */
+
+  .mobile-nav {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: rgba(250, 250, 248, 0.98);
+    border: 1px solid #e5efec;
+    border-radius: 22px;
+    box-shadow: 0 15px 40px rgba(0, 50, 45, 0.12);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: 0.25s ease;
+  }
+
+  .mobile-nav.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .mobile-nav-link {
+    min-height: 43px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 13px;
+    color: #536d69;
+    background: transparent;
+    border: none;
+    border-radius: 9px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+
+  .mobile-nav-link:hover,
+  .mobile-nav-link.active {
+    background: #eaf7f5;
+    color: #079d90;
+  }
+
+  /* Mobile Services */
+
+  .mobile-services {
+    width: 100%;
+  }
+
+  .mobile-services-btn .dropdown-arrow.rotated {
+    transform: rotate(225deg);
+  }
+
+  .mobile-services-list {
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    transition: max-height 0.3s ease;
+  }
+
+  .mobile-services-list.expanded {
+    max-height: 220px;
+  }
+
+  .mobile-services-list a {
+    padding: 10px 13px;
+    color: #657875;
+    font-size: 13px;
+    text-decoration: none;
+    border-left: 2px solid #c9e9e4;
+  }
+
+  .mobile-services-list a:hover {
+    color: #079d90;
+  }
+
+  /* Mobile Phone and CTA */
+
+  .mobile-phone {
+    margin-top: 8px;
+    padding: 12px;
+    color: #076d68;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    border-top: 1px solid #e6eeeb;
+  }
+
+  .mobile-appointment {
+    width: 100%;
+    min-height: 46px;
+    margin-top: 3px;
+    border-radius: 11px;
+  }
+}
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 480px) {
+
+  .navbar {
+    width: 100%;
+    height: 65px;
+    top: 0;
+  }
+
+  .navbar.scrolled {
+    width: calc(100% - 30px);
+    height: 65px;
+    transform: translateY(12px);
+  }
+
+  .navbar-container {
+    padding: 0 16px;
+  }
+
+  .navbar-brand img {
+    width: 165px;
+  }
+
+  .mobile-menu-btn {
+    width: 32px;
+  }
+}

@@ -1,0 +1,605 @@
+/* =================================
+   SERVICES SECTION
+================================= */
+
+.vph-srvx-section {
+    width: 100%;
+    padding: 75px 0 65px;
+    background: #eff6f4;
+    overflow: hidden;
+}
+
+.vph-srvx-container {
+    width: 90%;
+    max-width: 1540px;
+    margin: 0 auto;
+}
+
+
+/* =================================
+   SECTION HEADING
+================================= */
+
+.vph-srvx-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.vph-srvx-heading > span {
+    display: block;
+    color: #0d9d91;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.vph-srvx-heading h2 {
+    margin: 0;
+    color: #075f5a;
+    font-size: 28px;
+    font-weight: 650;
+    line-height: 1.3;
+}
+
+.vph-srvx-heading p {
+    margin: 8px 0 0;
+    color: #84938f;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+/* =================================
+   SERVICES GRID
+================================= */
+
+.vph-srvx-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+}
+
+
+/* =================================
+   SERVICE CARDS
+================================= */
+
+.vph-srvx-card {
+    position: relative;
+    display: block;
+    overflow: hidden;
+
+    border-radius: 23px;
+    background: #075f5a;
+
+    text-decoration: none;
+    isolation: isolate;
+}
+
+.vph-srvx-fracture,
+.vph-srvx-rheumatology {
+    grid-column: span 6;
+    height: 390px;
+}
+
+.vph-srvx-sports {
+    grid-column: span 12;
+    height: 450px;
+}
+
+.vph-srvx-xray,
+.vph-srvx-physio {
+    grid-column: span 4;
+    height: 400px;
+}
+
+
+/* =================================
+   CARD IMAGE
+================================= */
+
+.vph-srvx-image {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.65s ease;
+}
+
+.vph-srvx-card:hover .vph-srvx-image {
+    transform: scale(1.06);
+}
+
+
+/* =================================
+   IMAGE OVERLAY
+================================= */
+
+.vph-srvx-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to top,
+        rgba(0, 91, 80, 0.95) 0%,
+        rgba(0, 120, 105, 0.65) 10%,
+        rgba(0, 140, 125, 0.25) 20%,
+        transparent 32%
+    );
+
+    transition: opacity 0.35s ease;
+}
+
+.vph-srvx-card:hover .vph-srvx-overlay {
+    background: linear-gradient(
+        to top,
+        rgba(0, 76, 69, 0.98) 0%,
+        rgba(0, 139, 125, 0.91) 30%,
+        rgba(0, 90, 80, 0.15) 39%
+    );
+}
+
+
+/* =================================
+   CATEGORY BADGE
+================================= */
+
+.vph-srvx-category {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+
+    padding: 7px 14px;
+
+    color: #079d90;
+    background: rgba(255, 255, 255, 0.94);
+
+    border-radius: 30px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+
+/* =================================
+   CARD CONTENT
+================================= */
+
+.vph-srvx-content {
+    position: absolute;
+    left: 25px;
+    right: 25px;
+    bottom: 23px;
+    z-index: 2;
+
+    color: #ffffff;
+}
+
+.vph-srvx-content h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 22px;
+    font-weight: 650;
+    line-height: 1.35;
+
+    transition: transform 0.35s ease;
+}
+
+
+/* Description */
+
+.vph-srvx-description {
+    max-width: 95%;
+
+    margin: 0 0 12px;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+
+    opacity: 0;
+    transform: translateY(12px);
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.35s ease;
+
+    pointer-events: none;
+}
+
+
+/* Learn More */
+
+.vph-srvx-learn {
+    display: inline-block;
+
+    margin-bottom: 13px;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 650;
+
+    opacity: 0;
+    transform: translateY(10px);
+
+    transition:
+        opacity 0.35s ease 0.05s,
+        transform 0.35s ease 0.05s;
+}
+
+
+/* Hover Animation */
+
+.vph-srvx-card:hover .vph-srvx-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.vph-srvx-card:hover .vph-srvx-learn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =================================
+   APPOINTMENT CTA CARD
+================================= */
+
+.vph-srvx-cta {
+    grid-column: span 4;
+    min-height: 270px;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        145deg,
+        #0d998b,
+        #075d57
+    );
+
+    color: #ffffff;
+}
+
+
+/* Decorative Circles */
+
+.vph-srvx-decoration {
+    position: absolute;
+    top: -35px;
+    right: -25px;
+
+    width: 150px;
+    height: 150px;
+
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 50%;
+}
+
+.vph-srvx-decoration::after {
+    content: "";
+
+    position: absolute;
+    top: 25px;
+    right: 25px;
+
+    width: 90px;
+    height: 90px;
+
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 50%;
+}
+
+
+/* CTA Content */
+
+.vph-srvx-cta-content {
+    position: relative;
+    z-index: 2;
+}
+
+.vph-srvx-cta-content > span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+    color: #a5eee2;
+}
+
+.vph-srvx-cta-content h3 {
+    margin: 0 0 8px;
+
+    color: #ffffff;
+
+    font-size: 19px;
+    font-weight: 650;
+    line-height: 1.35;
+}
+
+.vph-srvx-cta-content p {
+    margin: 0 0 15px;
+
+    color: rgba(255, 255, 255, 0.85);
+
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+.vph-srvx-cta-content a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 9px 15px;
+
+    background: #ffffff;
+    color: #078f84;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+    font-weight: 650;
+
+    text-decoration: none;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.vph-srvx-cta-content a:hover {
+    background: #dff8f2;
+    transform: translateY(-3px);
+}
+
+
+/* =================================
+   VIEW ALL SERVICES
+================================= */
+
+.vph-srvx-footer {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 28px;
+}
+
+.vph-srvx-footer a {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 10px 22px;
+
+    border: 1px solid #079d90;
+    border-radius: 30px;
+
+    color: #079d90;
+    background: transparent;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+}
+
+.vph-srvx-footer a:hover {
+    background: #079d90;
+    color: #ffffff;
+}
+
+.vph-srvx-footer a span {
+    transition: transform 0.25s ease;
+}
+
+.vph-srvx-footer a:hover span {
+    transform: translateX(4px);
+}
+
+
+/* =================================
+   TABLET RESPONSIVE
+================================= */
+
+@media (max-width: 968px) {
+
+    .vph-srvx-section {
+        padding: 60px 0;
+    }
+
+    .vph-srvx-container {
+        width: 92%;
+    }
+
+    .vph-srvx-grid {
+        gap: 16px;
+    }
+
+    .vph-srvx-fracture,
+    .vph-srvx-rheumatology {
+        height: 320px;
+    }
+
+    .vph-srvx-sports {
+        height: 250px;
+    }
+
+    .vph-srvx-xray,
+    .vph-srvx-physio,
+    .vph-srvx-cta {
+        min-height: 230px;
+    }
+
+    .vph-srvx-content h3 {
+        font-size: 18px;
+    }
+
+    .vph-srvx-description {
+        font-size: 13px;
+    }
+}
+
+
+/* =================================
+   MOBILE RESPONSIVE
+   ALL CARDS VERTICAL
+================================= */
+
+@media (max-width: 600px) {
+
+    .vph-srvx-overlay{
+        background: linear-gradient( to top, rgba(0, 91, 80, 0.95) 12%, rgba(0, 120, 105, 0.65) 22%, rgba(0, 140, 125, 0.25) 35%, transparent 64% );
+    }
+
+    .vph-srvx-section {
+        padding: 45px 0;
+    }
+
+    .vph-srvx-container {
+        width: 92%;
+    }
+
+    /* Heading */
+
+    .vph-srvx-heading {
+        margin-bottom: 25px;
+    }
+
+    .vph-srvx-heading h2 {
+        font-size: 23px;
+    }
+
+    .vph-srvx-heading p {
+        font-size: 13px;
+    }
+
+
+    /* Single Column Layout */
+
+    .vph-srvx-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+
+    /* Every Card Full Width */
+
+    .vph-srvx-card,
+    .vph-srvx-fracture,
+    .vph-srvx-rheumatology,
+    .vph-srvx-sports,
+    .vph-srvx-xray,
+    .vph-srvx-physio {
+        width: 100%;
+        height: 390px;
+        min-height: 390px;
+        flex-shrink: 0;
+    }
+
+
+    /* Category */
+
+    .vph-srvx-category {
+        top: 13px;
+        left: 13px;
+
+        padding: 6px 11px;
+
+        font-size: 9px;
+    }
+
+
+    /* Card Content */
+
+    .vph-srvx-content {
+        left: 16px;
+        right: 16px;
+        bottom: 17px;
+    }
+
+    .vph-srvx-content h3 {
+        font-size: 17px;
+    }
+
+    .vph-srvx-description {
+        max-width: 100%;
+
+        font-size: 12px;
+        line-height: 1.5;
+
+        margin-bottom: 8px;
+    }
+
+    .vph-srvx-learn {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+
+    /* CTA Full Width */
+
+    .vph-srvx-cta {
+        width: 100%;
+        min-height: 200px;
+        flex-shrink: 0;
+
+        padding: 22px;
+    }
+
+    .vph-srvx-cta-content h3 {
+        font-size: 17px;
+    }
+
+    .vph-srvx-cta-content p {
+        font-size: 12px;
+    }
+
+
+    /* Footer */
+
+    .vph-srvx-footer {
+        margin-top: 22px;
+    }
+}
+
+
+/* =================================
+   TOUCH DEVICES
+================================= */
+
+@media (hover: none) {
+
+    .vph-srvx-description,
+    .vph-srvx-learn {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

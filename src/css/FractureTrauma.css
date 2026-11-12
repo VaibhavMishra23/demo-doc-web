@@ -1,0 +1,709 @@
+/* =========================================
+   FRACTURE & TRAUMA PAGE
+========================================= */
+
+.fracture-page {
+    width: 100%;
+    background: #f8faf8;
+    color: #263a32;
+    font-family: inherit;
+    overflow: hidden;
+}
+
+.fracture-container {
+    width: 90%;
+    max-width: 1240px;
+    margin: auto;
+}
+
+
+/* =========================================
+   BREADCRUMB
+========================================= */
+
+.fracture-breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 25px 0;
+    font-size: 14px;
+    color: #818c85;
+}
+
+.fracture-breadcrumb a {
+    color: #68776e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.fracture-breadcrumb a:hover {
+    color: #247653;
+}
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.fracture-hero {
+    padding: 45px 0 75px;
+}
+
+.fracture-hero .fracture-container {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    align-items: center;
+    gap: 65px;
+}
+
+.fracture-eyebrow {
+    display: inline-block;
+    color: #438565;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.fracture-hero-content h1 {
+    font-size: clamp(44px, 4.5vw, 62px);
+    line-height: 1.13;
+    font-weight: 600;
+    letter-spacing: -1.5px;
+    color: #173f30;
+    margin: 0 0 24px;
+}
+
+.fracture-hero-content p {
+    max-width: 470px;
+    font-size: 17px;
+    line-height: 1.9;
+    color: #69776f;
+    margin: 0;
+}
+
+.fracture-hero-image {
+    width: 100%;
+    height: 390px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.fracture-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.fracture-hero-image:hover img {
+    transform: scale(1.03);
+}
+
+
+/* =========================================
+   MAIN CONTENT LAYOUT
+========================================= */
+
+.fracture-main {
+    padding: 40px 0 100px;
+    background: #fff;
+}
+
+.fracture-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 75px;
+    align-items: start;
+}
+
+.fracture-content {
+    min-width: 0;
+}
+
+
+/* =========================================
+   CONTENT TEXT
+========================================= */
+
+.fracture-category {
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 1.7px;
+    font-weight: 700;
+    color: #428464;
+    margin-bottom: 20px;
+}
+
+.fracture-content > p {
+    font-size: 16px;
+    line-height: 1.95;
+    color: #65736b;
+    margin: 0 0 23px;
+}
+
+
+/* =========================================
+   WARNING BOX
+========================================= */
+
+.fracture-warning {
+    margin: 48px 0;
+    padding: 35px 38px;
+    background: #f5f8f5;
+    border-left: 3px solid #478969;
+}
+
+.fracture-warning h2,
+.fracture-treatments > h2,
+.fracture-recovery h2 {
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #1b4433;
+    margin: 0 0 24px;
+}
+
+.fracture-warning ul {
+    padding-left: 23px;
+    margin: 0;
+}
+
+.fracture-warning li {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #647269;
+    padding-left: 8px;
+    margin-bottom: 13px;
+}
+
+.fracture-warning li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   TREATMENT SECTION
+========================================= */
+
+.fracture-treatments {
+    margin-top: 65px;
+}
+
+.fracture-treatment-item {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 22px;
+    padding: 29px 0;
+    border-bottom: 1px solid #e9eee9;
+}
+
+.treatment-number {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #edf5ef;
+    color: #3d805e;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 50%;
+}
+
+.fracture-treatment-item h3 {
+    color: #244b39;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 600;
+    margin: 3px 0 12px;
+}
+
+.fracture-treatment-item p {
+    font-size: 15px;
+    line-height: 1.95;
+    color: #6b786f;
+    margin: 0;
+}
+
+
+/* =========================================
+   RECOVERY SECTION
+========================================= */
+
+.fracture-recovery {
+    margin-top: 58px;
+    padding: 35px;
+    background: #f7f9f7;
+}
+
+.fracture-recovery h2 {
+    margin-bottom: 18px;
+}
+
+.fracture-recovery p {
+    color: #69776e;
+    font-size: 15px;
+    line-height: 1.95;
+    margin: 0;
+}
+
+
+/* =========================================
+   FAQ SECTION
+========================================= */
+
+.fracture-faq {
+    margin-top: 80px;
+}
+
+.fracture-faq .fracture-eyebrow {
+    margin-bottom: 13px;
+}
+
+.fracture-faq > h2 {
+    font-size: 34px;
+    line-height: 1.3;
+    color: #1d4634;
+    font-weight: 600;
+    margin: 0 0 32px;
+}
+
+.fracture-faq-item {
+    border-bottom: 1px solid #e7ece7;
+}
+
+.fracture-faq-question {
+    width: 100%;
+    border: none;
+    background: transparent;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    cursor: pointer;
+    text-align: left;
+    color: #304b3c;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.faq-icon {
+    min-width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #edf4ef;
+    color: #377a56;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.fracture-faq-answer {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease;
+}
+
+.fracture-faq-answer p {
+    overflow: hidden;
+    margin: 0;
+    color: #748078;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.fracture-faq-item.active .fracture-faq-answer {
+    grid-template-rows: 1fr;
+}
+
+.fracture-faq-item.active .fracture-faq-answer p {
+    padding-bottom: 25px;
+}
+
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.fracture-sidebar {
+    position: sticky;
+    top: 30px;
+}
+
+.fracture-doctor-card {
+    background: #f4f8f4;
+    padding: 33px 27px;
+    border: 1px solid #e7eee7;
+}
+
+.sidebar-label {
+    color: #488566;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.fracture-doctor-card h3 {
+    font-size: 24px;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #204b36;
+    margin: 19px 0;
+}
+
+.fracture-doctor-card p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #6c786f;
+    margin: 7px 0;
+}
+
+.fracture-doctor-card .doctor-qualification {
+    color: #405c4b;
+    font-weight: 600;
+}
+
+.fracture-doctor-card .sidebar-small-heading {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #385c45;
+    margin-bottom: 9px;
+}
+
+.doctor-divider {
+    width: 100%;
+    height: 1px;
+    background: #dfe8df;
+    margin: 23px 0;
+}
+
+
+/* APPOINTMENT BUTTON */
+
+.fracture-appointment-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 18px;
+    background: #286c4c;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 28px;
+    transition: background 0.3s ease;
+}
+
+.fracture-appointment-btn:hover {
+    background: #194f36;
+}
+
+.fracture-appointment-btn span {
+    font-size: 18px;
+}
+
+.fracture-phone {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #426c52;
+    font-size: 15px;
+    margin-top: 17px;
+}
+
+
+/* =========================================
+   OTHER SERVICES
+========================================= */
+
+.fracture-other-services {
+    margin-top: 30px;
+    padding: 28px;
+    border: 1px solid #e9eee9;
+}
+
+.fracture-other-services h3 {
+    color: #244a37;
+    font-size: 21px;
+    font-weight: 600;
+    margin: 0 0 18px;
+}
+
+.fracture-other-services a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+    border-bottom: 1px solid #edf0ed;
+    text-decoration: none;
+    color: #6c786f;
+    font-size: 14px;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+}
+
+.fracture-other-services a:last-child {
+    border-bottom: none;
+}
+
+.fracture-other-services a:hover {
+    color: #28734d;
+}
+
+.fracture-other-services a span {
+    color: #4d8968;
+    font-size: 18px;
+}
+
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .fracture-layout {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .fracture-sidebar {
+        position: static;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .fracture-other-services {
+        margin-top: 0;
+    }
+
+    .fracture-hero .fracture-container {
+        gap: 30px;
+    }
+
+    .fracture-hero-image {
+        height: 320px;
+    }
+
+    .fracture-hero-content h1 {
+        font-size: 46px;
+    }
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .fracture-container {
+        width: 90%;
+    }
+
+
+    /* BREADCRUMB */
+
+    .fracture-breadcrumb {
+        padding: 18px 0;
+        gap: 8px;
+        font-size: 12px;
+    }
+
+
+    /* HERO */
+
+    .fracture-hero {
+        padding: 25px 0 45px;
+    }
+
+    .fracture-hero .fracture-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .fracture-eyebrow {
+        font-size: 12px;
+        margin-bottom: 16px;
+    }
+
+    .fracture-hero-content h1 {
+        font-size: 42px;
+        line-height: 1.15;
+        letter-spacing: -1px;
+    }
+
+    .fracture-hero-content p {
+        font-size: 15px;
+        line-height: 1.85;
+    }
+
+    .fracture-hero-image {
+        height: 245px;
+    }
+
+
+    /* MAIN */
+
+    .fracture-main {
+        padding: 25px 0 65px;
+    }
+
+    .fracture-category {
+        font-size: 12px;
+    }
+
+    .fracture-content > p {
+        font-size: 15px;
+        line-height: 1.9;
+        margin-bottom: 20px;
+    }
+
+
+    /* WARNING */
+
+    .fracture-warning {
+        padding: 26px 21px;
+        margin: 37px 0;
+    }
+
+    .fracture-warning h2,
+    .fracture-treatments > h2,
+    .fracture-recovery h2 {
+        font-size: 23px;
+        margin-bottom: 19px;
+    }
+
+    .fracture-warning li {
+        font-size: 14px;
+        line-height: 1.85;
+        margin-bottom: 13px;
+    }
+
+
+    /* TREATMENTS */
+
+    .fracture-treatment-item {
+        grid-template-columns: 37px 1fr;
+        gap: 14px;
+        padding: 24px 0;
+    }
+
+    .treatment-number {
+        width: 34px;
+        height: 34px;
+        font-size: 12px;
+    }
+
+    .fracture-treatment-item h3 {
+        font-size: 18px;
+        margin-top: 2px;
+    }
+
+    .fracture-treatment-item p {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+
+    /* RECOVERY */
+
+    .fracture-recovery {
+        padding: 25px 20px;
+        margin-top: 42px;
+    }
+
+    .fracture-recovery p {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+
+    /* FAQ */
+
+    .fracture-faq {
+        margin-top: 58px;
+    }
+
+    .fracture-faq > h2 {
+        font-size: 29px;
+        margin-bottom: 25px;
+    }
+
+    .fracture-faq-question {
+        font-size: 15px;
+        line-height: 1.6;
+        padding: 20px 0;
+        gap: 13px;
+    }
+
+    .faq-icon {
+        min-width: 28px;
+        height: 28px;
+        font-size: 20px;
+    }
+
+    .fracture-faq-answer p {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+
+    /* SIDEBAR */
+
+    .fracture-sidebar {
+        grid-template-columns: 1fr;
+    }
+
+    .fracture-doctor-card {
+        padding: 28px 22px;
+    }
+
+    .fracture-doctor-card h3 {
+        font-size: 23px;
+    }
+
+    .fracture-doctor-card p {
+        font-size: 14px;
+    }
+
+    .fracture-doctor-card .sidebar-small-heading {
+        font-size: 12px;
+    }
+
+    .fracture-appointment-btn {
+        font-size: 14px;
+    }
+
+    .fracture-phone {
+        font-size: 14px;
+    }
+
+
+    /* OTHER SERVICES */
+
+    .fracture-other-services {
+        padding: 24px 21px;
+    }
+
+    .fracture-other-services h3 {
+        font-size: 20px;
+    }
+
+    .fracture-other-services a {
+        font-size: 14px;
+        padding: 14px 0;
+    }
+
+}
