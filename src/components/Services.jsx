@@ -45,7 +45,7 @@ const services = [
         name: 'Physiotherapy & Rehabilitation',
         image: service5,
         description: 'Personalised physiotherapy and rehabilitation focused on mobility, strength and recovery.',
-        href: '/physiotherapy-rehabilitation',
+        href: '/services/physiotherapy-rehabilitation',
         className: 'vph-srvx-physio'
     }
 ];
