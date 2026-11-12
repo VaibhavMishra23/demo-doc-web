@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../css/FAQ.css";
 
 const faqData = [
@@ -80,7 +81,7 @@ const FAQ = () => {
                 <div className="faq-container">
 
                     <div className="faq-breadcrumb">
-                        <a href="/demo-doc-web">Home</a>
+                        <Link to="/">Home</Link>
                         <span>›</span>
                         <span className="current">FAQ</span>
                     </div>
@@ -166,25 +167,25 @@ const FAQ = () => {
 
                             {services.map((service, index) => (
 
-                                <a
-                                    href={`/services/${[
+                                <Link
+                                    to={`/services/${[
                                         "fracture-trauma-care",
                                         "rheumatology-arthritis",
                                         "sports-medicine",
-                                        "digital-x-ray",
+                                        "digital-xray",
                                         "physiotherapy-rehabilitation"
                                     ][index]}`}
                                     key={index}
                                 >
                                     {service}
-                                </a>
+                                </Link>
 
                             ))}
 
                         </div>
 
 
-                        <a href="/appointment" className="faq-book-btn">
+                        <Link to="/appointment" className="faq-book-btn">
 
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -204,7 +205,7 @@ const FAQ = () => {
 
                             Book Appointment
 
-                        </a>
+                        </Link>
 
                     </div>
 

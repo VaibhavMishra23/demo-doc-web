@@ -55,10 +55,10 @@ const treatments = [
 ];
 
 const otherServices = [
-    "Rheumatology & Arthritis",
-    "Sports Medicine",
-    "Digital X-Ray",
-    "Physiotherapy & Rehabilitation"
+    "rheumatology-arthritis",
+    "sports-medicine",
+    "digital-xray",
+    "physiotherapy-rehabilitation"
 ];
 
 export default function FractureTrauma() {
@@ -71,9 +71,9 @@ export default function FractureTrauma() {
 
             <div className="fracture-container">
                 <div className="fracture-breadcrumb">
-                    <Link to="/demo-doc-web">Home</Link>
+                    <Link to="/">Home</Link>
                     <span>›</span>
-                    <Link to="/demo-doc-web/services">Services</Link>
+                    <Link to="/services">Services</Link>
                     <span>›</span>
                     <span>Fracture & Trauma Care</span>
                 </div>
@@ -308,13 +308,13 @@ export default function FractureTrauma() {
                             <p>12:00 Noon – 4:00 PM</p>
                             <p>6:00 PM – 9:00 PM</p>
 
-                            <a
-                                href="tel:+910000000000"
-                                className="fracture-appointment-btn"
+                            <Link
+                                to="/appointment"
+                                className="appointment-btn"
                             >
                                 Book Appointment
                                 <span>↗</span>
-                            </a>
+                            </Link>
 
                             <a
                                 href="tel:+910000000000"
@@ -333,13 +333,13 @@ export default function FractureTrauma() {
                             <h3>Other Services</h3>
 
                             {otherServices.map((service, index) => (
-                                <a
-                                    href="#"
+                                <Link
+                                    to={`/services/${service}`}
                                     key={index}
                                 >
                                     {service}
                                     <span>↗</span>
-                                </a>
+                                </Link>
                             ))}
 
                         </div>

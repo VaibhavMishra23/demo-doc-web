@@ -13,7 +13,7 @@ const services = [
         name: 'Fracture & Trauma Care',
         image: service1,
         description: 'Broken bones and injuries diagnosed and treated in one place — X-ray, plaster, fixation, and follow-up, without running between centres.',
-        href: '#fracture-treatment',
+        href: '/fracture-trauma-care',
         className: 'vph-srvx-fracture'
     },
     {
@@ -21,7 +21,7 @@ const services = [
         name: 'Rheumatology & Arthritis',
         image: service2,
         description: 'Expert evaluation and treatment for arthritis, joint pain, and rheumatic conditions with personalised care.',
-        href: '#rheumatology',
+        href: '/rheumatology-arthritis',
         className: 'vph-srvx-rheumatology'
     },
     {
@@ -29,7 +29,7 @@ const services = [
         name: 'Sports Medicine',
         image: service3,
         description: 'Injury assessment, recovery plans and rehabilitation to help you return to your daily activities and sports.',
-        href: '#sports-medicine',
+        href: '/sports-medicine',
         className: 'vph-srvx-sports'
     },
     {
@@ -37,7 +37,7 @@ const services = [
         name: 'Digital X-Ray',
         image: service4,
         description: 'Convenient in-house digital X-ray facilities to support accurate diagnosis and treatment planning.',
-        href: '#digital-xray',
+        href: '/digital-xray',
         className: 'vph-srvx-xray'
     },
     {
@@ -45,15 +45,15 @@ const services = [
         name: 'Physiotherapy & Rehabilitation',
         image: service5,
         description: 'Personalised physiotherapy and rehabilitation focused on mobility, strength and recovery.',
-        href: '#physiotherapy',
+        href: '/physiotherapy-rehabilitation',
         className: 'vph-srvx-physio'
     }
 ];
 
 function ServiceCard({ service }) {
     return (
-        <a
-            href={service.href}
+        <Link
+            to={service.href}
             className={`vph-srvx-card ${service.className}`}
         >
             <img
@@ -81,7 +81,7 @@ function ServiceCard({ service }) {
                 <h3>{service.name}</h3>
 
             </div>
-        </a>
+        </Link>
     );
 }
 
@@ -130,10 +130,10 @@ export default function Services() {
                                 the right path.
                             </p>
 
-                            <a href="#appointment">
+                            <Link to="/appointment">
                                 <span>▣</span>
                                 Book Appointment
-                            </a>
+                            </Link>
 
                         </div>
 

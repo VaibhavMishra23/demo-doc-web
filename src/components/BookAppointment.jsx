@@ -1,5 +1,6 @@
 import "../css/BookAppointment.css";
 import Appointment from "./Appointment";
+import { Link } from "react-router-dom";
 
 const BookAppointment = () => {
     return (
@@ -14,7 +15,7 @@ const BookAppointment = () => {
 
                     <div className="vm-appt-hero-breadcrumb">
 
-                        <a href="/demo-doc-web">Home</a>
+                        <Link to="/">Home</Link>
 
                         <span className="vm-appt-hero-separator">
                             ›

@@ -1,4 +1,5 @@
 import "../css/ContactPage.css";
+import { Link } from "react-router-dom";
 
 const ContactPage = () => {
     return (
@@ -12,7 +13,7 @@ const ContactPage = () => {
                 <div className="contact-container">
 
                     <div className="contact-breadcrumb">
-                        <a href="/demo-doc-web">Home</a>
+                        <Link to="/">Home</Link>
                         <span>/</span>
                         <span>Contact</span>
                     </div>

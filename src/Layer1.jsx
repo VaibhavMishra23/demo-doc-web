@@ -16,6 +16,7 @@ import BookAppointment from './components/BookAppointment'
 import ServicesPage from './components/ServicesPage'
 import DemoNotice from './components/DemoNotice'
 import ScrollToTop from './components/ScrollToTop';
+import PrivacyPolicy from './components/PrivacyPolicy'
 
 function Layer1() {
   return (
@@ -52,6 +53,7 @@ function Layer1() {
     <Route path="/services/sports-medicine" element={<DemoNotice/>} />
     <Route path="/services/digital-xray" element={<DemoNotice/>} />
     <Route path="/services/physiotherapy-rehabilitation" element={<DemoNotice/>} />
+    <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
     </Routes>
     <Footer/>
     </BrowserRouter>

@@ -1,4 +1,5 @@
 import "../css/Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 
@@ -18,12 +19,12 @@ const Footer = () => {
 
                 <div className="footer-brand">
 
-                    <a href="/demo-doc-web" className="footer-logo">
+                    <Link to="/" className="footer-logo">
                         <img
                             src={`${import.meta.env.BASE_URL}logo.webp`}
                             alt="Dr. Sushil Kumar Patle"
                         />
-                    </a>
+                    </Link>
 
                     <div className="footer-registration">
 
@@ -51,16 +52,16 @@ const Footer = () => {
                     <h3>EXPLORE</h3>
 
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><Link to="/aboutdoctor">About</Link></li>
+                        <li><Link to="/services">Services</Link></li>
+                        <li><Link to="/gallery">Gallery</Link></li>
+                        <li><Link to="/faq">FAQ</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
 
                         <li>
-                            <a href="#appointment">
+                            <Link to="/appointment">
                                 Book Appointment
-                            </a>
+                            </Link>
                         </li>
                     </ul>
 
@@ -108,7 +109,7 @@ const Footer = () => {
                     {/* EMAIL */}
 
                     <a
-                        href="mailto:patlehealthcare@gmail.com"
+                        href="mailto:demo000ooo0o0o@gmail.com"
                         className="footer-contact-item"
                     >
 
@@ -208,9 +209,9 @@ const Footer = () => {
                     © 2026 Patle Health Care Center. All rights reserved.
                     {" · "}
 
-                    <a href="/privacy-policy">
+                    <Link to="/privacy-policy">
                         Privacy Policy
-                    </a>
+                    </Link>
                 </p>
 
             </div>

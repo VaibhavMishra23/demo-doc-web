@@ -1,5 +1,6 @@
 import "../css/MainAbout.css";
 import doctor from "../assets/doctor.webp";
+import { Link } from "react-router-dom";
 
 const AboutDoctor = () => {
     return (
@@ -10,7 +11,7 @@ const AboutDoctor = () => {
                 <div className="about-container">
 
                     <div className="about-breadcrumb">
-                        <a href="/demo-doc-web">Home</a>
+                        <Link to="/">Home</Link>
                         <span>›</span>
                         <span>About</span>
                     </div>
@@ -230,8 +231,8 @@ const AboutDoctor = () => {
 
                             {/* BOOK CONSULTATION */}
 
-                            <a
-                                href="/appointment"
+                            <Link
+                                to="/appointment"
                                 className="doctor-consultation-btn"
                             >
 
@@ -256,7 +257,7 @@ const AboutDoctor = () => {
 
                                 Book a Consultation
 
-                            </a>
+                            </Link>
 
                         </div>
 

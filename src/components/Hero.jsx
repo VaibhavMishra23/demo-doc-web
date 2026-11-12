@@ -1,5 +1,6 @@
 import '../css/Hero.css';
 import doctorImage from '../assets/doctor.webp';
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
     return (
@@ -46,7 +47,7 @@ export default function Hero() {
                     {/* Buttons */}
                     <div className="hero-buttons">
 
-                        <a href="#appointment" className="hero-btn-primary">
+                        <Link to="/appointment" className="hero-btn-primary">
 
                             <svg viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" strokeWidth="2">
@@ -55,7 +56,7 @@ export default function Hero() {
                             </svg>
 
                             Book Appointment
-                        </a>
+                        </Link>
 
                         <a href="tel:+910000000000" className="hero-btn-outline">
 
