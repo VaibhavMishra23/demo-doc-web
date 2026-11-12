@@ -20,7 +20,7 @@ import ScrollToTop from './components/ScrollToTop';
 function Layer1() {
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter basename="/demo-doc-web">
     <ScrollToTop />
     <Navbar />
     <Routes>
