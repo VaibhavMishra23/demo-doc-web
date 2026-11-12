@@ -34,7 +34,7 @@ const services = [
         category: "DIAGNOSTICS",
         title: "Digital X-Ray",
         image: service4,
-        link: "/services/digital-x-ray",
+        link: "/services/digital-xray",
     },
     {
         id: 5,
@@ -54,7 +54,7 @@ const ServicesPage = () => {
                 <div className="services-container">
 
                     <div className="services-breadcrumb">
-                        <Link to="/demo-doc-web">Home</Link>
+                        <Link to="/">Home</Link>
                         <span>/</span>
                         <span>Services</span>
                     </div>

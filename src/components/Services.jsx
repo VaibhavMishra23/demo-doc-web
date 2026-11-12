@@ -13,7 +13,7 @@ const services = [
         name: 'Fracture & Trauma Care',
         image: service1,
         description: 'Broken bones and injuries diagnosed and treated in one place — X-ray, plaster, fixation, and follow-up, without running between centres.',
-        href: '/fracture-trauma-care',
+        href: '/services/fracture-trauma-care',
         className: 'vph-srvx-fracture'
     },
     {
@@ -21,7 +21,7 @@ const services = [
         name: 'Rheumatology & Arthritis',
         image: service2,
         description: 'Expert evaluation and treatment for arthritis, joint pain, and rheumatic conditions with personalised care.',
-        href: '/rheumatology-arthritis',
+        href: '/services/rheumatology-arthritis',
         className: 'vph-srvx-rheumatology'
     },
     {
@@ -37,7 +37,7 @@ const services = [
         name: 'Digital X-Ray',
         image: service4,
         description: 'Convenient in-house digital X-ray facilities to support accurate diagnosis and treatment planning.',
-        href: '/digital-xray',
+        href: '/services/digital-xray',
         className: 'vph-srvx-xray'
     },
     {
