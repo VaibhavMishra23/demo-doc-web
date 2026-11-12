@@ -29,7 +29,7 @@ const services = [
         name: 'Sports Medicine',
         image: service3,
         description: 'Injury assessment, recovery plans and rehabilitation to help you return to your daily activities and sports.',
-        href: '/sports-medicine',
+        href: '/services/sports-medicine',
         className: 'vph-srvx-sports'
     },
     {
