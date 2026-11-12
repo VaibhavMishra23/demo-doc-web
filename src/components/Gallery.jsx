@@ -57,7 +57,7 @@ const Gallery = () => {
 
                 <div className="gallery-breadcrumb">
 
-                    <Link to="/demo-doc-web">
+                    <Link to="/" className="gallery-breadcrumb-link">
                         Home
                     </Link>
 

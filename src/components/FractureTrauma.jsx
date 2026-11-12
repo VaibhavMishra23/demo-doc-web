@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../css/FractureTrauma.css";
 import service1 from "../assets/service1.webp";
+import { Link } from "react-router-dom";
 
 const faqs = [
     {
@@ -70,9 +71,9 @@ export default function FractureTrauma() {
 
             <div className="fracture-container">
                 <div className="fracture-breadcrumb">
-                    <a href="/demo-doc-web">Home</a>
+                    <Link to="/demo-doc-web">Home</Link>
                     <span>›</span>
-                    <a href="/services">Services</a>
+                    <Link to="/demo-doc-web/services">Services</Link>
                     <span>›</span>
                     <span>Fracture & Trauma Care</span>
                 </div>
