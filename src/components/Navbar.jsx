@@ -81,7 +81,7 @@ export default function Navbar() {
                     onClick={closeMenu}
                 >
                     <img
-                        src="/logo.webp"
+                        src={`${import.meta.env.BASE_URL}logo.webp`}
                         alt="Dr. Sushil Kumar Patle"
                     />
                 </Link>

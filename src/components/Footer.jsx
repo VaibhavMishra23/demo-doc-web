@@ -20,7 +20,7 @@ const Footer = () => {
 
                     <a href="/" className="footer-logo">
                         <img
-                            src="/logo.webp"
+                            src={`${import.meta.env.BASE_URL}logo.webp`}
                             alt="Dr. Sushil Kumar Patle"
                         />
                     </a>
